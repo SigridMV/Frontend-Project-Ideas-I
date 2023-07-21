@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.carousel {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slides {
+  display: flex;
+  width: 300%; /* Ancho total de todos los slides */
+}
+
+.carousel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

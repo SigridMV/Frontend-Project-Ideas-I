@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  background-color: #dce9c0;
+  color: white;
+}
+
+.outer {
+  overflow: hidden;
+  border: 5px double rgb(141, 141, 141);
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  margin-top: 3vw;
+  position: relative;
+  background-color: white;
+}
+
+.hand {
+  transform-origin: top left;
+}
+
+#seconds-hand {
+  z-index: 25;
+  position: relative;
+  top: 250px;
+  left: 250px;
+  border: 1px solid #a9ce82;
+  width: 180px;
+}
+
+#minute-hand {
+  z-index: 18;
+  position: relative;
+  border: 1px solid black;
+  top: 250px;
+  width: 150px;
+  left: 250px;
+}
+
+#hour-hand {
+  z-index: 20;
+  position: relative;
+  border: 1px solid black;
+  top: 250px;
+  width: 100px;
+  left: 249px;
+}
+
+.centerCircle {
+  z-index: 29;
+  position: relative;
+  border: 1px solid black;
+  top: 235px;
+  width: 20px;
+  height: 20px;
+  background-color: #7abb50;
+  border-radius: 100%;
+  left: 240px;
+}
+
+.number {
+  position: absolute;
+  font-size: 18px;
+  color: black;
+}
+
+.number-12 {
+  top: 20px;
+  left: 235px;
+}
+
+.number-1 {
+  top: 45px;
+  left: 315px;
+}
+
+.number-2 {
+  top: 120px;
+  left: 390px;
+}
+
+.number-3 {
+  top: 235px;
+  left: 430px;
+}
+
+.number-4 {
+  top: 360px;
+  left: 390px;
+}
+
+.number-5 {
+  top: 435px;
+  left: 315px;
+}
+
+.number-6 {
+  top: 460px;
+  left: 235px;
+}
+
+.number-7 {
+  top: 435px;
+  left: 155px;
+}
+
+.number-8 {
+  top: 360px;
+  left: 80px;
+}
+
+.number-9 {
+  top: 235px;
+  left: 40px;
+}
+
+.number-10 {
+  top: 120px;
+  left: 80px;
+}
+
+.number-11 {
+  top: 45px;
+  left: 155px;
+}

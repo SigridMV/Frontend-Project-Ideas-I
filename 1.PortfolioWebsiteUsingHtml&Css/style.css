@@ -1,0 +1,206 @@
+/* Reset de estilos para eliminar márgenes y paddings predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del navbar */
+nav {
+  background-color: #007bff;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content:right;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+/* Estilo del hero */
+.hero {
+  background-image: url("./img/img3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: right;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  display: inline-block;
+  position: relative;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilo del botón con efecto blurry */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-color: rgba(0, 123, 255, 0.7);
+  border-radius: 10px;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+
+/* Estilo de la sección "About" */
+.about {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p{
+  font-size: 22px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Estilo de las tarjetas de habilidades */
+.skills {
+  padding: 100px 0;
+}
+
+.skill-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.skill-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding: 20px;
+  display: grid;
+  align-self: center;
+}
+
+.contact h2 {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-weight: bold;
+}
+
+/* Estilo del footer */
+footer {
+  background-color: #007bff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}

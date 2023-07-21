@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Color del ícono de lupa */
+}
+
+.icon-bar {
+  width: 16px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar-active .search-input {
+  width: 300px;
+}
+
+.search-bar-active .icon-bar {
+  background-color: #fff;
+}
+
+.search-bar-active .icon-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.search-bar-active .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.search-bar-active .icon-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-4px, -6px);
+}
+
